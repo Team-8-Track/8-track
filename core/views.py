@@ -45,6 +45,7 @@ def new_album(request):
        instance = Album(**data)
     #    instance.users.set = request.user
     #    print(instance.user)
+       print(data)
        instance.save()
        return render(request, 'core/new_album.html',) 
 
