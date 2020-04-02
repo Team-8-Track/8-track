@@ -330,9 +330,6 @@ span.save-album {
   pointer-events: auto;
 }
 
-.big-album-info {
-    float: left;
-}
 
 .big-title {
     margin-bottom: 5px;
@@ -345,19 +342,21 @@ span.save-album {
     border: 2px solid gray;
 }
 
+.album-tracks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .track-list {
-    /* margin: 100px; */
-    margin-top: 200px;
-    padding: 30px;
-    font-size: 18px;
-    font-style: italic;
-    background-color: rgb(37, 35, 41);
-    width: 40%;
-    max-height: max-content;
-    position: absolute;
-    right: 5%;
-    border-radius: 20px;
-    color: rgb(180,	36,	120);
+  padding: 30px;
+  font-size: 18px;
+  font-style: italic;
+  background-color: rgb(37, 35, 41);
+  width: 40%;
+  border-radius: 20px;
+  color: rgb(180,	36,	120);
+  line-height: 30px;
 }
 
 .artist-image {
@@ -407,6 +406,7 @@ span.save-album {
   cursor: pointer;
   pointer-events: auto;
 }
+
 
 @media screen and (max-width: 1200px){
 .fas.fa-plus-circle {
